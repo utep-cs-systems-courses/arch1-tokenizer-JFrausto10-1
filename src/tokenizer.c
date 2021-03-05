@@ -91,7 +91,7 @@ char** tokenize(char* str){
   return tokenizer;
 }
 
-/*prints the tokenize in its enirty*/
+/*prints the tokenize*
 void print_tokens(char** tokens){
   for(int i=0; tokens[i] != NULL; i++){
     for(int j=0; tokens[i][j] != '\0'; j++){
@@ -100,6 +100,17 @@ void print_tokens(char** tokens){
     printf("\n");
   }
 }
+*/
+
+void print_tokens(char **tokens){
+  int index = 0;
+  while(tokens[index] != NULL){
+    printf("%s\n", tokens[index]);
+    index++;
+  }
+}
+
+
 
 /*frees all allocated memory*/
 void free_tokens(char** tokens){
